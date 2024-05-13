@@ -12,6 +12,9 @@
 
 
 const btn = document.querySelector("button");
+const pcOut = document.getElementById("numeroPc")
+const userOut = document.getElementById("numeroUser")
+const risultato = document.getElementById("risultato")
 
 btn.addEventListener("click", function () {
 
@@ -19,14 +22,16 @@ btn.addEventListener("click", function () {
     const numeroUser = Math.floor(Math.random() * 6 + 1);
 
     if (numeroPc > numeroUser) {
-        console.log("Ha vinto il pc")
-    } else if (numeroPc < numeroUser) {
-        console.log("Hai vinto!")
+        risultato.innerHTML = ("Mi dispiace ma stavolta ha vinto il computer")
 
+    } else if (numeroPc < numeroUser) {
+        risultato.innerHTML = ("Complimenti hai vinto!")
     } else if (numeroPc === numeroUser) {
-        console.log("Pareggio")
+        risultato.innerHTML = ("Pareggio")
     }
 
+    pcOut.innerHTML = (numeroPc)
+    userOut.innerHTML = (numeroUser)
 
     console.log(numeroPc)
     console.log(numeroUser)
