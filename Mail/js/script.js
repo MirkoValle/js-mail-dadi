@@ -12,3 +12,10 @@
 
 const emailSalvate = ["perseo.orione@gmail.com", "paolo.latorre@gmail.com", "giannipinto27@outlook.it", "chiccogatto8899@icloud.com"]
 
+const userEmail = prompt("Inserisci la tua email")
+
+if (emailSalvate.includes(userEmail)) {
+    console.log("Email corretta")
+} else {
+    console.log("Non sembra registrato al portale, controlla l'email inserita o registrati")
+}
