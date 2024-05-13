@@ -33,8 +33,4 @@ btn.addEventListener("click", function () {
     pcOut.innerHTML = (numeroPc)
     userOut.innerHTML = (numeroUser)
 
-    console.log(numeroPc)
-    console.log(numeroUser)
-
-
 })
